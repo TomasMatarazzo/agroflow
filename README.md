@@ -1,34 +1,47 @@
-# AgroFlow 🌱
+# AgroFlow
 
-AgroFlow is a personal open-source agricultural business management project focused on 13-week cash flow forecasting for small and medium agricultural businesses.
+Open-source personal project for managing agricultural business finances. AgroFlow
+starts with a rolling 13-week cash-flow forecast, with planned expansion into crop
+budgets, agricultural inventory and operations.
 
-**Status:** early-stage MVP started November 2026. This is not an established product. All example amounts and transactions are fictional; no client code or personal data is included.
+**Project status:** early-stage personal MVP, created November 2026. This is not
+a deployed production application and has no external users yet.
 
-## Features in the first MVP
-- 13-week rolling projected cash flow
-- Income and expense tracking with due dates
-- Forecast of opening and closing balances
-- Editable transactions stored in local browser storage
-- Demo data for farming use cases
+## Features (current milestone)
 
-## Stack
-Next.js, React, TypeScript. Local storage only in the initial MVP.
+- Cash-flow projections from an editable opening balance
+- Income and expense movements with real calendar due dates
+- Past-due pending items carried into the current week
+- Completed items excluded from projected cash movements
+- Automated unit tests for the financial projection engine
+- Synthetic demo records only; browser storage, no backend
 
-## Run
-Requires Node.js 20.9+.
+## Run locally
 
-```bash
-npm install
-npm run dev
-```
+Requires Node.js 22+ and npm.
+
+    npm install
+    npm run dev
 
 Open http://localhost:3000.
 
-## Limitations
-No backend, login, database or backups yet. Do not enter real personal, confidential or financial information. Use synthetic data only until secure handling is implemented.
+## Test
 
-## Roadmap
-See [ROADMAP.md](./ROADMAP.md) for future features including scenario planning, recurring payments, testing, crop campaigns, inventory and multi-tenant access.
+    npm test
+    npm run typecheck
+    npm run build
 
-## Ownership
-Personal project maintained by Tomas Matarazzo; released under the [MIT License](./LICENSE).
+## Roadmap and contributions
+
+See [ROADMAP.md](./ROADMAP.md) for an honest breakdown of what is already built
+and what remains to be implemented. Issues and contributions are welcome.
+
+## Privacy and limitations
+
+Do not enter customer, confidential, regulated or real financial data. This prototype
+uses localStorage, which is not a secure, audited financial database. The sample
+farm is entirely fictional.
+
+## Ownership and license
+
+Original personal project maintained by Tomas Matarazzo. [MIT](./LICENSE).

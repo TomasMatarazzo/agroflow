@@ -1,25 +1,36 @@
-# AgroFlow roadmap
+# AgroFlow development roadmap
 
-The project started November 2026. The following work is planned, not yet delivered.
+AgroFlow is a personal open-source MVP, started on November 6, 2026.
+Only checked items are implemented. Estimates describe *future work*, not paid hours.
 
-## Phase 1 — Financial foundation (25–40 h)
-- [ ] Build and test an interactive 13-week cash-flow forecast
-- [ ] Add income, expenses, due dates, completed and overdue movements
-- [ ] Recurring payments and scenario comparisons
-- [ ] CSV import/export and validation
-- [ ] Automated tests and responsive accessibility review
+## Milestone 1 — Reliable cash-flow foundation (in progress)
+- [x] Public repository, README, MIT license and synthetic dataset
+- [x] Extract forecast calculations into a testable domain module
+- [x] Support real due dates, rolling 13-week window and overdue carry-forward
+- [x] Exclude completed movements to prevent double counting
+- [x] Add unit tests for balances, year rollover and invalid input
+- [ ] Add integration tests and confirm a production build in CI
+- [ ] Enable editing and searching historical movements
 
-## Phase 2 — Data and access (35–55 h)
-- [ ] PostgreSQL, migrations and integration tests
-- [ ] Authentication and company membership
-- [ ] Tenant separation, authorization and audit logging
-- [ ] Settings and onboarding
+## Milestone 2 — Financial planning (estimated 15–25 hours)
+- [ ] Recurring payments and receivables
+- [ ] Scenario comparisons: baseline, cautious, optimistic
+- [ ] CSV import with validation and duplicate detection
+- [ ] Weekly forecast vs actual and planned payment status
+- [ ] Charts and cash shortfall warnings
 
-## Phase 3 — Agricultural management (45–70 h)
-- [ ] Fields, plots and crop campaigns
-- [ ] Crop costs, costs per hectare and harvest forecasts
-- [ ] Inventory, stock movements and profitability
-- [ ] Suppliers and receivables
+## Milestone 3 — Agricultural operations (estimated 25–45 hours)
+- [ ] Fields, plots, crop seasons and activities
+- [ ] Crop budgets, costs per hectare and margins
+- [ ] Inputs, inventory and machinery costs
+- [ ] Supplier/customer ledgers
+
+## Milestone 4 — Secure persistence (estimated 30–50 hours)
+- [ ] PostgreSQL data model and migrations
+- [ ] Authentication and separate workspaces for each business
+- [ ] Row-level permissions, audit log and backups
+- [ ] Tests for cross-tenant isolation, deployment and observability
 
 ## Boundaries
-This is personal open-source software. Use only synthetic demo data. No customer/client code, credentials or real financial data.
+Only fabricated demo data is allowed in this public prototype. Do not upload client
+code, credentials, people's personal data, or real financial records.
